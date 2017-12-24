@@ -1,0 +1,189 @@
+<PropertyList>
+
+	<path>Engine.ac</path>
+	
+    <model>
+        <nopreview/>
+        <path>Effects/Engines/AfterBurner.xml</path>
+        <offsets>
+            <x-m>  3.188</x-m>
+            <y-m>   0.0</y-m>
+            <z-m>  -0.15</z-m>
+        </offsets>
+        <overlay>
+            <params>
+                <augmentation-alight>sim/multiplay/generic/float[16]</augmentation-alight>
+                <augmentation-ignition>sim/multiplay/generic/float[8]</augmentation-ignition>
+            </params>
+        </overlay>
+    </model>
+    
+    <!-- Droite -->
+    <!--
+    <model>
+        <nopreview/>
+        <path>Effects/Engines/AfterBurner.xml</path>
+        <offsets>
+            <x-m>  6.188</x-m>
+            <y-m>  0.7336</y-m>
+            <z-m>  0.0704</z-m>
+        </offsets>
+        <overlay>
+            <params>
+                <augmentation-alight>sim/multiplay/generic/float[17]</augmentation-alight>
+                <augmentation-ignition>sim/multiplay/generic/float[9]</augmentation-ignition>
+            </params>
+        </overlay>
+    </model>
+    -->
+    
+    <animation>
+        <type>material</type>
+        <object-name>AfterburnerL</object-name>
+        <object-name>TurbineL</object-name>
+        <emission>
+            <red>1.0</red>
+            <green>0.5</green>
+            <blue>0.0</blue>
+            <factor-prop>engines/engine[0]/afterburner</factor-prop>
+        </emission>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>AfterburnerR</object-name>
+        <object-name>TurbineR</object-name>
+        
+        <emission>
+            <red>1.0</red>
+            <green>0.5</green>
+            <blue>0.0</blue>
+            <factor-prop>engines/engine[1]/afterburner</factor-prop>
+        </emission>
+    </animation>
+
+<!-- Swivel Nozzle -->
+
+
+<!-- Nozzle Petals -->
+<!-- .000 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.000</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.000</object-name>
+		</axis>
+	</animation>
+<!-- .001 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.001</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.001</object-name>
+		</axis>
+	</animation>
+<!-- .002 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.002</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.002</object-name>
+		</axis>
+	</animation>
+<!-- .003 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.003</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.003</object-name>
+		</axis>
+	</animation>
+<!-- .004 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.004</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.004</object-name>
+		</axis>
+	</animation>
+<!-- .005 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.005</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.005</object-name>
+		</axis>
+	</animation>
+<!-- .006 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.006</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.006</object-name>
+		</axis>
+	</animation>
+<!-- .007 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.007</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.007</object-name>
+		</axis>
+	</animation>
+<!-- .008 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.008</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.008</object-name>
+		</axis>
+	</animation>
+<!-- .009 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.009</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.009</object-name>
+		</axis>
+	</animation>
+<!-- .010 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.010</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.010</object-name>
+		</axis>
+	</animation>
+<!-- .011 -->
+	<animation>
+		<type>rotate</type>
+		<object-name>nozzle_petal_01.011</object-name>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>-20.0</factor>
+		<axis>
+			<object-name>nozzle_petal_01_axis.011</object-name>
+		</axis>
+	</animation>
+	
+</PropertyList>

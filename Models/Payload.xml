@@ -1,0 +1,467 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	
+	<!-->
+	path>pylons.ac</path>
+	-->
+
+	<!-- 
+	<model>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/pylons.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>
+	-->	
+
+	<!-- Station1-LAU-129A -->	
+	<model>
+		<name>Station1-LAU-129A</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/LAU-129A/LAU-129A.xml</path>
+		<offsets>
+			<x-m> 2.20</x-m>
+			<y-m>-5.72</y-m>
+			<z-m>-0.32</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>-90</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station1-LAU-129A</object-name>      
+		<condition>
+			<or>
+				<equals>
+					<property>payload/weight[0]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>payload/weight[0]/selected</property>
+					<value>AIM-120</value>
+				</equals>
+			</or>
+		</condition>
+	</animation>
+
+	<!-- Station1-LAU-129A/AIM-9 -->	
+	<model>
+		<name>Station1-AIM-9</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AIM-9M/AIM-9M.xml</path>
+		<offsets>
+			<x-m> 1.93</x-m>
+			<y-m>-5.87</y-m>
+			<z-m>-0.32</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station1-AIM-9</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[0]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[0]/jettison-all</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<!-- Station1 LAU-129A/AIM-120 -->	
+	<model>
+		<name>Station1-AIM-120</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AIM-120A/AIM-120A.xml</path>
+		<offsets>
+			<x-m> 1.93</x-m>
+			<y-m>-5.90</y-m>
+			<z-m>-0.32</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	 
+	<animation>
+		<type>select</type>
+		<object-name>Station1-AIM-120</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[0]/selected</property>
+					<value>AIM-120</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[0]/jettison-all</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+
+	<!-- Station2-LAU-129A -->	
+	<model>
+		<name>Station2-LAU-129A</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/LAU-129A/LAU-129A.xml</path>
+		<offsets>
+			<x-m> 1.60</x-m>
+			<y-m>-4.00</y-m>
+			<z-m>-0.55</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>0</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station2-LAU-129A</object-name>      
+		<condition>
+			<or>
+				<equals>
+					<property>payload/weight[1]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>payload/weight[1]/selected</property>
+					<value>AIM-120</value>
+				</equals>
+			</or>
+		</condition>
+	</animation>
+
+	<!-- Station2-LAU-129A/AIM-9 -->	
+	<model>
+		<name>Station2-AIM-9</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AIM-9M/AIM-9M.xml</path>
+		<offsets>
+			<x-m> 1.43</x-m>
+			<y-m>-4.00</y-m>
+			<z-m>-0.70</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station2-AIM-9</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[1]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[1]/jettison-all</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<!-- Station2 LAU-129A/AIM-120 -->	
+	<model>
+		<name>Station2-AIM-120</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AIM-120A/AIM-120A.xml</path>
+		<offsets>
+			<x-m> 1.43</x-m>
+			<y-m>-4.00</y-m>
+			<z-m>-0.72</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	 
+	<animation>
+		<type>select</type>
+		<object-name>Station2-AIM-120</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[1]/selected</property>
+					<value>AIM-120</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[1]/jettison-all</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<!-- Station3-LAU-118 -->
+	<model>
+		<name>Station3-LAU-118</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/LAU-118/LAU-118.xml</path>
+		<offsets>
+			<x-m>1.25</x-m>
+			<y-m>-3.20</y-m>
+			<z-m>-0.63</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station3-LAU-118</object-name>      
+		<condition>
+			<equals>
+				<property>payload/weight[2]/selected</property>
+				<value>AGM-88E</value>
+			</equals>
+		</condition>
+	</animation> 
+
+	<!-- Station3-AGM-88E -->
+	<model>
+		<name>Station3-AGM-88E</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AGM-88E/AGM-88E.xml</path>
+		<offsets>
+			<x-m>1.25</x-m>
+			<y-m>-3.20</y-m>
+			<z-m>-0.86</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station3-AGM-88E</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[2]/selected</property>
+					<value>AGM-88E</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[2]/jettison-all</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
+
+
+	<!-- Station10-LAU-118 -->
+	<model>
+		<name>Station10-LAU-118</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/LAU-118/LAU-118.xml</path>
+		<offsets>
+			<x-m>1.25</x-m>
+			<y-m> 3.20</y-m>
+			<z-m>-0.63</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station10-LAU-118</object-name>      
+		<condition>
+			<equals>
+				<property>payload/weight[9]/selected</property>
+				<value>AGM-88E</value>
+			</equals>
+		</condition>
+	</animation> 
+
+	<!-- Station10-AGM-88E -->
+	<model>
+		<name>Station10-AGM-88E</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AGM-88E/AGM-88E.xml</path>
+		<offsets>
+			<x-m>1.25</x-m>
+			<y-m> 3.20</y-m>
+			<z-m>-0.86</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station10-AGM-88E</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[9]/selected</property>
+					<value>AGM-88E</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[9]/jettison-all</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
+
+	<!-- Station11-LAU-129A -->	
+	<model>
+		<name>Station11-LAU-129A</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/LAU-129A/LAU-129A.xml</path>
+		<offsets>
+			<x-m> 1.60</x-m>
+			<y-m> 4.00</y-m>
+			<z-m>-0.55</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>0</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station11-LAU-129A</object-name>      
+		<condition>
+			<or>
+				<equals>
+					<property>payload/weight[10]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>payload/weight[10]/selected</property>
+					<value>AIM-120</value>
+				</equals>
+			</or>
+		</condition>
+	</animation>
+
+	<!-- Station11-LAU-129A/AIM-9 -->	
+	<model>
+		<name>Station11-AIM-9</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AIM-9M/AIM-9M.xml</path>
+		<offsets>
+			<x-m> 1.43</x-m>
+			<y-m> 4.00</y-m>
+			<z-m>-0.70</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station11-AIM-9</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[10]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[10]/jettison-all</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<!-- Station11 LAU-129A/AIM-120 -->	
+	<model>
+		<name>Station11-AIM-120</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AIM-120A/AIM-120A.xml</path>
+		<offsets>
+			<x-m> 1.43</x-m>
+			<y-m> 4.00</y-m>
+			<z-m>-0.72</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	 
+	<animation>
+		<type>select</type>
+		<object-name>Station11-AIM-120</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[10]/selected</property>
+					<value>AIM-120</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[10]/jettison-all</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+
+	<!-- Station12-LAU-129A -->	
+	<model>
+		<name>Station12-LAU-129A</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/LAU-129A/LAU-129A.xml</path>
+		<offsets>
+			<x-m> 2.20</x-m>
+			<y-m> 5.72</y-m>
+			<z-m>-0.32</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>90</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station12-LAU-129A</object-name>      
+		<condition>
+			<or>
+				<equals>
+					<property>payload/weight[11]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>payload/weight[11]/selected</property>
+					<value>AIM-120</value>
+				</equals>
+			</or>
+		</condition>
+	</animation>
+
+	<!-- Station12-LAU-129A/AIM-9 -->	
+	<model>
+		<name>Station12-AIM-9</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AIM-9M/AIM-9M.xml</path>
+		<offsets>
+			<x-m> 1.93</x-m>
+			<y-m> 5.87</y-m>
+			<z-m>-0.32</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>90</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station12-AIM-9</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[11]/selected</property>
+					<value>AIM-9</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[11]/jettison-all</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+	<!-- Station12 LAU-129A/AIM-120 -->	
+	<model>
+		<name>Station12-AIM-120</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AIM-120A/AIM-120A.xml</path>
+		<offsets>
+			<x-m> 1.93</x-m>
+			<y-m> 5.90</y-m>
+			<z-m>-0.32</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>0</roll-deg>
+		</offsets>
+	</model>	 
+	<animation>
+		<type>select</type>
+		<object-name>Station12-AIM-120</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[11]/selected</property>
+					<value>AIM-120</value>
+				</equals>
+				<equals>
+					<property>controls/armament/station[11]/jettison-all</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+
+
+</PropertyList>

@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<!-- Flightec Labs(c) TECH-DEMO-01 -->
+
+<PropertyList include="TECH-DEMO-01-common.xml">
+
+    <sim>
+        <description>TECH-DEMO-01</description>
+        <long-description>
+            The TECH-DEMO-01 is a high-performance, supersonic, allweather air-superiority fighter built by McDonnell
+            Douglas Aerospace powered by two Pratt and Whitney F-100 turbofan engines. Its primary mission is aerial combat. This model does not support ground missions.
+            Radar and heat seeking air-to-air missiles and a 20 MM gun are the primary armament. 
+            MTOW 74,350 lbs. VNE 1100. Max Gear extension 300 kts. Max Flap speed 250kts.
+        </long-description>
+
+        <author>Richard Harrison, Enrique Laso, xii</author>
+        <status>production</status>
+        <previews>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_1.jpg</path>
+            </preview>
+
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_10.jpg</path>
+            </preview>
+
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_11.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_12.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_13.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_14.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_15.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_16.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_17.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_18.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_19.jpg</path>
+            </preview>
+
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_2.jpg</path>
+            </preview>
+
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">false</splash>
+                <path>Previews/TECH-DEMO-01_3.jpg</path>
+            </preview>
+
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_4.jpg</path>
+            </preview>
+
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_5.jpg</path>
+            </preview>
+
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_6.jpg</path>
+            </preview>
+
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_7.jpg</path>
+            </preview>
+
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_8.jpg</path>
+            </preview>
+
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_9.jpg</path>
+            </preview>
+            <preview>
+                <type>interior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_i1.jpg</path>
+            </preview>
+            <preview>
+                <type>interior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_i2.jpg</path>
+            </preview>
+            <preview>
+                <type>interior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_i3.jpg</path>
+            </preview>
+            <preview>
+                <type>interior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_i4.jpg</path>
+            </preview>
+            <preview>
+                <type>interior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_i5.jpg</path>
+            </preview>
+            <preview>
+                <type>interior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/TECH-DEMO-01_i6.jpg</path>
+            </preview>
+        </previews>
+        <startup>
+            <splash-texture>Aircraft/TECH-DEMO-01/Splash.jpg</splash-texture>
+            <splash-logo-image>Aircraft/TECH-DEMO-01/Splash-logo.png</splash-logo-image>
+        </startup>
+        <model>
+            <path>Aircraft/TECH-DEMO-01/Models/TECH-DEMO-01.xml</path>
+            <f15>
+                <variant>C</variant>
+            </f15>
+        </model>
+        <rating>
+            <FDM type="int">5</FDM>
+            <systems type="int">5</systems>
+            <cockpit type="int">5</cockpit>
+            <model type="int">5</model>
+        </rating>
+    </sim>
+    <fdm>
+        <jsbsim>
+            <metrics>
+                <two-place-canopy type="int">0</two-place-canopy>
+            </metrics>
+        </jsbsim>
+    </fdm>
+    <nasal>
+        <f15_net>
+            <file>Aircraft/TECH-DEMO-01/Nasal/mp-network.nas</file>
+        </f15_net>
+    </nasal>
+</PropertyList>

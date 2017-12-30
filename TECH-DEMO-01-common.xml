@@ -520,17 +520,17 @@
         </sound>
 
         <model>
-            <path>Aircraft/TECH-DEMO-01/Models/f15c.xml</path>
+            <path>Aircraft/TECH-DEMO-01/Models/TECH-DEMO-01.xml</path>
             <hide-pilot type="bool">false</hide-pilot >
             <hide-backseater type="bool">false</hide-backseater>
             <hide-pilots-auto type="bool">true</hide-pilots-auto>
-		<map>
-			<default_exit>
-				<x-offset-m type ="float">-5</x-offset-m>
-				<y-offset-m type ="float">-3.55</y-offset-m>
-			</default_exit>
-		</map>
-            <f15>
+            <map>
+                <default_exit>
+                    <x-offset-m type ="float">-5</x-offset-m>
+                    <y-offset-m type ="float">-3.55</y-offset-m>
+                </default_exit>
+            </map>
+            <TECH-DEMO-01>
                 <controls>
                     <windshield-heat type="int">0</windshield-heat>
                     <AFCS>
@@ -1080,7 +1080,7 @@
                     <aircraft-agl-height userarchive="y" type="double">7.728680129</aircraft-agl-height>
                     <!--                    <init-delay type="int">0.1</init-delay> -->
                 </overrides>
-            </f15>
+            </TECH-DEMO-01>
         </model>
 
         <multiplay>
@@ -1113,7 +1113,7 @@
                 <int n="12" alias="/engines/engine[1]/fuel-flow_pph" />
                 <int n="13" alias="/instrumentation/airspeed-indicator/indicated-speed-kt" />
                 <int n="14" alias="/instrumentation/radar/radar2-range" />
-                <int n="15" alias="/sim/model/f15/instrumentation/fuel-gauges/total" />
+                <int n="15" alias="/sim/model/TECH-DEMO-01/instrumentation/fuel-gauges/total" />
                 <int n="16" alias="/velocities/mach" />
                 <int n="17">0</int> <!-- Radar Status -->
                 <int n="18">0</int> <!-- Total Weight (lbs) -->
@@ -1374,6 +1374,31 @@
             <path>Aircraft/TECH-DEMO-01/Systems/instrumentation.xml</path>
         </instrumentation>
     </sim>
+
+		<hud>
+			<path n="1">Aircraft/TECH-DEMO-01/Hud/HUD.xml</path>
+			<visibility n="1">true</visibility>
+			<palette>
+				<color n="0">
+					<alpha type="float">0.85</alpha>
+					<antialiased type="bool">true</antialiased>
+					<brightness type="float">0.85</brightness>
+					<transparent type="bool">true</transparent>
+					<red type="float">0.38</red>
+					<green type="float">1.0</green>
+					<blue type="float">0.22</blue>
+				</color>
+				<color n="1">
+					<alpha type="float">0.85</alpha>
+					<antialiased type="bool">true</antialiased>
+					<brightness type="float">0.85</brightness>
+					<transparent type="bool">true</transparent>
+					<red type="float">1.0</red>
+					<green type="float">0.2</green>
+					<blue type="float">0.0</blue>
+				</color>
+			</palette>
+		</hud>  
 
     <payload>
         <weight n="0">
@@ -1784,7 +1809,7 @@
                 <desc>Toggle autopilot altitude mode.</desc>
                 <binding>
                     <command>property-toggle</command>
-                    <property>sim/model/f15/controls/afcs/alt-hold</property>
+                    <property>sim/model/TECH-DEMO-01/controls/afcs/alt-hold</property>
                 </binding>
             </key>
 
@@ -1820,7 +1845,7 @@
                 <desc>Toggle autopilot attitude mode</desc>
                 <binding>
                     <command>property-toggle</command>
-                    <property>sim/model/f15/controls/afcs/att-hold</property>
+                    <property>sim/model/TECH-DEMO-01/controls/afcs/att-hold</property>
                 </binding>
             </key>
 
@@ -2030,7 +2055,7 @@
                 <desc>Cycle Weapon Mode Selector</desc>
                 <binding>
                     <command>property-adjust</command>
-                    <property>sim/model/f15/controls/armament/weapon-selector</property>
+                    <property>sim/model/TECH-DEMO-01/controls/armament/weapon-selector</property>
                     <step>1</step>
                     <min>0</min>
                     <max>3</max>
@@ -2043,7 +2068,7 @@
                 <desc>Next target select</desc>
                 <binding>
                     <command>property-assign</command>
-                    <property>sim/model/f15/instrumentation/radar-awg-9/select-target</property>
+                    <property>sim/model/TECH-DEMO-01/instrumentation/radar-awg-9/select-target</property>
                     <value>1</value>
                 </binding>
             </key>
@@ -2053,7 +2078,7 @@
                 <desc>Previous target select</desc>
                 <binding>
                     <command>property-assign</command>
-                    <property>sim/model/f15/instrumentation/radar-awg-9/select-target</property>
+                    <property>sim/model/TECH-DEMO-01/instrumentation/radar-awg-9/select-target</property>
                     <value>-1</value>
                 </binding>
             </key>
@@ -2180,6 +2205,18 @@
         <f15_chronograph>
             <file>Aircraft/TECH-DEMO-01/Nasal/chronograph.nas</file>
         </f15_chronograph>
+        <FLCS>
+             <file>Aircraft/TECH-DEMO-01/Nasal/FLCS.nas</file>         
+        </FLCS>
+        <ECS>
+             <file>Aircraft/TECH-DEMO-01/Nasal/ECS.nas</file>         
+        </ECS>
+        <VMS>
+             <file>Aircraft/TECH-DEMO-01/Nasal/VMS.nas</file>
+        </VMS>
+        <SMS>         
+            <file>Aircraft/TECH-DEMO-01/Nasal/SMS.nas</file>
+        </SMS>          
         <aircraft>
             <file>Nasal/canvas/MFD_Generic.nas</file>
             <file>Aircraft/Generic/an_spn_46.nas</file>
@@ -2208,7 +2245,8 @@
             <file>Aircraft/TECH-DEMO-01/Nasal/ext_stores.nas</file>
             <file>Aircraft/TECH-DEMO-01/Nasal/crash-and-stress.nas</file>
             -->
-       </aircraft>
+            <file>Aircraft/TECH-DEMO-01/Nasal/Main.nas</file>         
+      </aircraft>
         <environment>
             <file>Nasal/environment.nas</file>
         </environment>

@@ -125,37 +125,8 @@
 		<property-base>sim/model/livery</property-base>
 		<object-name>FUSELAGE_01</object-name>
 		<object-name>FUSELAGE_02</object-name>
-		<object-name>arch</object-name>
-		<object-name>fuel top</object-name>
-		<object-name>antennas</object-name>
 		<object-name>l_elevator</object-name>
 		<object-name>r_elevator</object-name>
-		<object-name>tail</object-name>
-		<object-name>rudderL</object-name>
-		<object-name>rudderR</object-name>
-		<object-name>flaperonL</object-name>
-		<object-name>flaperonR</object-name>
-		<object-name>spoilerL</object-name>
-		<object-name>spoilerR</object-name>
-		<object-name>door engineL</object-name>
-		<object-name>door engineR</object-name>
-		<object-name>door bayLI</object-name>
-		<object-name>door bayLO</object-name>
-		<object-name>door bayRI</object-name>
-		<object-name>door bayRO</object-name>
-		<object-name>doorFL</object-name>
-		<object-name>doorFR</object-name>
-		<object-name>door fan</object-name>
-		<object-name>door fanL</object-name>
-		<object-name>door fanR</object-name>
-		<object-name>door topL</object-name>
-		<object-name>door topR</object-name>
-		<object-name>doorB1L</object-name>
-		<object-name>doorB2L</object-name>
-		<object-name>thrusterL</object-name>
-		<object-name>thrusterR</object-name>
-		<object-name>doorB1R</object-name>
-		<object-name>doorB2R</object-name>
 		<texture-prop>texture</texture-prop>
 		<texture>Liveries/Default.png</texture>
 	</animation>

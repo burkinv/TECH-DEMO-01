@@ -32,7 +32,7 @@
             <path>Sounds/jfs-startup.wav</path>
             <condition>
                 <greater-than>
-                    <property>sim/model/f15/controls/jfs</property>
+                    <property>sim/model/TECH-DEMO-01/controls/jfs</property>
                     <value>9</value>
                 </greater-than>
             </condition>
@@ -49,10 +49,10 @@
             <path>Sounds/jfs-shutdown.wav</path>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
                 <equals>
-                    <property>sim/model/f15/controls/jfs</property>
+                    <property>sim/model/TECH-DEMO-01/controls/jfs</property>
                     <value>1</value>
                 </equals>
             </condition>
@@ -72,10 +72,10 @@
             <delay-sec>6.3</delay-sec>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
                 <greater-than>
-                    <property>sim/model/f15/controls/jfs</property>
+                    <property>sim/model/TECH-DEMO-01/controls/jfs</property>
                     <value>9</value>
                 </greater-than>
             </condition>
@@ -93,7 +93,7 @@
             <mode>looped</mode>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
             </condition>
             <position>
@@ -126,7 +126,7 @@
             <mode>looped</mode>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
             </condition>
             <position>
@@ -159,7 +159,7 @@
             <path>Sounds/jet-whine.wav</path>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
             </condition>
             <mode>looped</mode>
@@ -194,7 +194,7 @@
             <mode>looped</mode>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
             </condition>
             <pitch>
@@ -228,7 +228,7 @@
             <mode>looped</mode>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
             </condition>
             <pitch>
@@ -262,7 +262,7 @@
             <mode>looped</mode>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
             </condition>
             <pitch>
@@ -296,7 +296,7 @@
             <mode>looped</mode>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
                 <greater-than>
                     <property>engines/engine[0]/thrust_lb</property>
@@ -337,7 +337,7 @@
             <mode>looped</mode>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
                 <greater-than>
                     <property>engines/engine[1]/thrust_lb</property>
@@ -378,7 +378,7 @@
             <mode>looped</mode>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
             </condition>
             <volume>
@@ -407,7 +407,7 @@
             <mode>looped</mode>
             <condition>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
             </condition>
             <volume>
@@ -437,7 +437,7 @@
             <condition>
                 <property>engines/engine[0]/augmentation</property>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
                 <property>engines/engine[0]/running</property>
             </condition>
@@ -468,7 +468,7 @@
             <condition>
                 <property>engines/engine[1]/augmentation</property>
                 <not>
-                    <property>sim/model/f15/engine-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/engine-sound-freeze</property>
                 </not>
                 <property>engines/engine[1]/running</property>
             </condition>
@@ -500,7 +500,7 @@
             <path>Sounds/fuselage-strike.wav</path>
             <condition>
                 <not>
-                    <property>sim/model/f15/gear-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/gear-sound-freeze</property>
                 </not>
                 <or>
                     <property>fdm/jsbsim/contact/unit[3]/WOW</property>
@@ -534,7 +534,7 @@
             <path>Sounds/fuselage-strike.wav</path>
             <condition>
                 <not>
-                    <property>sim/model/f15/gear-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/gear-sound-freeze</property>
                 </not>
                 <or>
                     <property>fdm/jsbsim/contact/unit[3]/WOW</property>
@@ -564,7 +564,7 @@
             <path>Sounds/rumble.wav</path>
             <condition>
                 <not>
-                    <property>sim/model/f15/gear-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/gear-sound-freeze</property>
                 </not>
                 <or>
                     <property>gear/gear[0]/wow</property>
@@ -589,7 +589,7 @@
             <property>fdm/jsbsim/gear/unit[0]/compression-velocity-fps</property>
             <condition>
                 <not>
-                    <property>sim/model/f15/gear-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/gear-sound-freeze</property>
                 </not>
                 <property>gear/gear[0]/wow</property>
                 <greater-than>
@@ -619,7 +619,7 @@
         <flaps-wind>
             <condition>
                 <not>
-                    <property>sim/model/f15/gear-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/gear-sound-freeze</property>
                 </not>
                 <greater-than>
                     <property>fdm/jsbsim/fcs/flap-windfx-volume</property>
@@ -641,7 +641,7 @@
         <gear-0-wind>
             <condition>
                 <not>
-                    <property>sim/model/f15/gear-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/gear-sound-freeze</property>
                 </not>
                 <greater-than>
                     <property>fdm/jsbsim/fcs/gear-windfx-volume</property>
@@ -664,7 +664,7 @@
             <mode>looped</mode>
             <condition>
                 <not>
-                    <property>sim/model/f15/gear-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/gear-sound-freeze</property>
                 </not>
                 <equals>
                     <property>fdm/jsbsim/gear/emergency-handle</property>
@@ -694,7 +694,7 @@
             <path>Sounds/gear-door-close.wav</path>
             <condition>
                 <not>
-                    <property>sim/model/f15/gear-sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/gear-sound-freeze</property>
                 </not>
                 <equals>
                     <property>fdm/jsbsim/gear/emergency-handle</property>
@@ -1230,7 +1230,7 @@
             <path>Sounds/betty-warning.wav</path>
             <condition>
                 <greater-than>
-                    <property>sim/model/f15/instrumentation/warnings/master-caution</property>
+                    <property>sim/model/TECH-DEMO-01/instrumentation/warnings/master-caution</property>
                     <value>0</value>
                 </greater-than>
                 <greater-than>
@@ -1263,7 +1263,7 @@
                     <value>2</value>
                 </greater-than>
                 <greater-than>
-                    <property>sim/model/f15/lights/ca-bingo-fuel</property>
+                    <property>sim/model/TECH-DEMO-01/lights/ca-bingo-fuel</property>
                     <value>0</value>
                 </greater-than>
                 <greater-than>
@@ -1293,7 +1293,7 @@
                     <value>2</value>
                 </greater-than>
                 <greater-than>
-                    <property>sim/model/f15/lights/ca-fuel-low</property>
+                    <property>sim/model/TECH-DEMO-01/lights/ca-fuel-low</property>
                     <value>0</value>
                 </greater-than>
                 <greater-than>
@@ -1316,7 +1316,7 @@
             <mode>looped</mode>
             <path>Sounds/M61A1.wav</path>
             <condition>
-                <property>sim/model/f15/systems/gun/running</property>
+                <property>sim/model/TECH-DEMO-01/systems/gun/running</property>
             </condition>
             <volume>
                 <value>1</value>
@@ -1373,7 +1373,7 @@
                     <property>gear/gear[2]/wow</property>
                 </or>
                 <not>
-                    <property>sim/model/f15/sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/sound-freeze</property>
                 </not>
                 <greater-than>
                     <property>fdm/jsbsim/systems/electrics/ground-power-gpu</property>
@@ -1420,7 +1420,7 @@
                     <property>gear/gear[2]/wow</property>
                 </or>
                 <not>
-                    <property>sim/model/f15/sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/sound-freeze</property>
                 </not>
                 <and>
                     <greater-than>
@@ -1464,10 +1464,10 @@
                     <property>gear/gear[2]/wow</property>
                 </or>
                 <not>
-                    <property>sim/model/f15/sound-freeze</property>
+                    <property>sim/model/TECH-DEMO-01/sound-freeze</property>
                 </not>
                 <greater-than>
-                    <property>sim/model/f15/controls/fuel/refuel-probe-switch</property>
+                    <property>sim/model/TECH-DEMO-01/controls/fuel/refuel-probe-switch</property>
                     <value>0</value>
                 </greater-than>
             </condition>

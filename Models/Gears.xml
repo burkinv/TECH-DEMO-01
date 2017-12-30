@@ -7,8 +7,10 @@
 	<animation>
 		<type>material</type>
 		<property-base>sim/model/livery</property-base>
+		<!--
 		<object-name>l_gear_13</object-name>
-		<object-name>r_gear_13</object-name>		
+		<object-name>r_gear_13</object-name>
+		-->
 		<texture-prop>texture</texture-prop>
 		<texture>Liveries/Default.png</texture>
 	</animation>

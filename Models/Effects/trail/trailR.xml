@@ -13,7 +13,7 @@
     <condition>
       <and>
           <not>
-              <property>sim/model/f15/fx/smoke</property>
+              <property>sim/model/TECH-DEMO-01/fx/smoke</property>
           </not>
         <greater-than>
                     <property>engines/engine[1]/PB</property>

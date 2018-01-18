@@ -57,7 +57,7 @@
 
     <sim>
         <description>TECH-DEMO-01</description>
-        <author>Richard Harrison, Enrique Laso, xii</author>
+        <author>Flightec Labs(c)</author>
         <status>production</status>
         <config>
             <hud-filter type="int">1</hud-filter>
@@ -971,99 +971,108 @@
                             <type type="string">-</type>
                             <selected type="bool">false</selected>
                             <offsets>
-                <x-m>1.7844</x-m>
-                <y-m>-3.8325</y-m>
-                <z-m>0.288</z-m>
-                            </offsets>
+                                <x-m>1.7844</x-m>
+                                <y-m>-3.8325</y-m>
+                                <z-m>0.288</z-m>
+                             </offsets>
                         </station>
                         <station n="1">
                             <type type="string">-</type>
                             <selected type="bool">false</selected>
                             <offsets>
-                <x-m>1.4077</x-m>
-                <y-m>-3.3034</y-m>
-                <z-m>1.4077</z-m>
+                                <x-m>1.4077</x-m>
+                                <y-m>-3.3034</y-m>
+                                <z-m>1.4077</z-m>
                             </offsets>
                         </station>
                         <station n="2">
                             <type type="string">-</type>
                             <selected type="bool">false</selected>
                             <offsets>
-                <x-m>1.7844</x-m>
-                <y-m>-3.8325</y-m>
-                <z-m>0.288</z-m>
+                                <x-m>1.7844</x-m>
+                                <y-m>-3.8325</y-m>
+                                <z-m>0.288</z-m>
                             </offsets>
                         </station>
                         <station n="3">
                             <type type="string">-</type>
                             <selected type="bool">false</selected>
                             <offsets>
-                <x-m>-0.3003</x-m>
-                <y-m>1.611</y-m>
-                <z-m>0.567</z-m>
+                                <x-m>-0.3003</x-m>
+                                <y-m>1.611</y-m>
+                                <z-m>0.567</z-m>
                             </offsets>
                         </station>
                         <station n="4">
                             <type type="string">-</type>
                             <selected type="bool">false</selected>
                             <offsets>
-                <x-m>3.5918</x-m>
-                <y-m>1.611</y-m>
-                <z-m>0.567</z-m>
+                                <x-m>3.5918</x-m>
+                                <y-m>1.611</y-m>
+                                <z-m>0.567</z-m>
                             </offsets>
                         </station>
                         <station n="5">
                             <type type="string">-</type>
                             <selected type="bool">false</selected>
                             <offsets>
-                <x-m>0</x-m>
-                <y-m>0</y-m>
-                <z-m>0.33</z-m>
+                                <x-m>0</x-m>
+                                <y-m>0</y-m>
+                                <z-m>0.33</z-m>
                             </offsets>
                         </station>
                         <station n="6">
                             <type type="string">-</type>
                             <selected type="bool">false</selected>
                             <offsets>
-                <x-m>-0.3003</x-m>
-                <y-m>1.611</y-m>
-                <z-m>0.567</z-m>
+                                <x-m>-0.3003</x-m>
+                                <y-m>1.611</y-m>
+                                <z-m>0.567</z-m>
                             </offsets>
                         </station>
                         <station n="7">
                             <type type="string">-</type>
                             <selected type="bool">false</selected>
                             <offsets>
-                <x-m>3.5918</x-m>
-                <y-m>1.611</y-m>
-                <z-m>0.567</z-m>
+                                <x-m>3.5918</x-m>
+                                <y-m>1.611</y-m>
+                                <z-m>0.567</z-m>
                             </offsets>
                         </station>
                         <station n="8">
                             <type type="string">-</type>
                             <selected type="bool">false</selected>
                             <offsets>
-                <x-m>1.7844</x-m>
-                <y-m>3.8325</y-m>
-                <z-m>0.288</z-m>
+                                <x-m>1.7844</x-m>
+                                <y-m>3.8325</y-m>
+                                <z-m>0.288</z-m>
                             </offsets>
                         </station>
                         <station n="9">
                             <type type="string">-</type>
                             <selected type="bool">false</selected>
                             <offsets>
-                <x-m>1.4077</x-m>
-                <y-m>3.3034</y-m>
-                <z-m>1.407</z-m>
+                                <x-m>1.4077</x-m>
+                                <y-m>3.3034</y-m>
+                                <z-m>1.407</z-m>
                             </offsets>
                         </station>
                         <station n="10">
                             <type type="string">-</type>
                             <selected type="bool">false</selected>
                             <offsets>
-                <x-m>1.7844</x-m>
-                <y-m>3.8325</y-m>
-                <z-m>0.288</z-m>
+                                <x-m>1.7844</x-m>
+                                <y-m>3.8325</y-m>
+                                <z-m>0.288</z-m>
+                            </offsets>
+                        </station>
+                       <station n="11">
+                            <type type="string">-</type>
+                            <selected type="bool">false</selected>
+                            <offsets>
+                                <x-m>1.7844</x-m>
+                                <y-m>-3.8325</y-m>
+                                <z-m>0.288</z-m>
                             </offsets>
                         </station>
                     </external-loads>
@@ -1160,7 +1169,7 @@
                         <label>Fuel and Stores</label>
                         <binding>
                             <command>nasal</command>
-                            <script>aircraft.ext_loads_dlg.open()</script>
+                            <script>SMS.ext_loads_dlg.open()</script>
                         </binding>
                     </item>
                     <item n="2">
@@ -1402,9 +1411,10 @@
 
     <payload>
         <weight n="0">
-            <name>Station1</name>
+            <name>Station01</name>
             <weight-lb type="float">0</weight-lb>
             <selected>none</selected>
+            <launched type="bool">false</launched>
             <opt>
                 <name>none</name>
                 <lbs>0</lbs>
@@ -1420,10 +1430,11 @@
         </weight>
         
         <weight n="1">
-            <name>Station2</name>
+            <name>Station02</name>
             <weight-lb type="float">0</weight-lb>
             <selected>none</selected>
-            <opt>
+            <launched type="bool">false</launched>
+           <opt>
                 <name>none</name>
                 <lbs>0</lbs>
             </opt>
@@ -1438,10 +1449,11 @@
         </weight>
         
         <weight n="2">
-            <name>Station3</name>
+            <name>Station03</name>
             <tank>9</tank>
             <weight-lb type="float">0</weight-lb>
             <selected>none</selected>
+            <launched type="bool">false</launched>
             <opt>
                 <name>none</name>
                 <lbs>0</lbs>
@@ -1470,9 +1482,10 @@
         </weight>
         
         <weight n="3">
-            <name>LeftInternalBay</name>
+            <name>Station04</name>
             <weight-lb type="float">0</weight-lb>
             <selected>none</selected>
+            <launched type="bool">false</launched>
             <opt>
                 <name>none</name>
                 <lbs>0</lbs>
@@ -1500,9 +1513,34 @@
         </weight>
         
         <weight n="4">
-            <name>RightInternalBay</name>
+            <name>Left-Internal-Bay Station05 </name>
             <weight-lb type="float">0</weight-lb>
             <selected>none</selected>
+            <launched type="bool">false</launched>
+            <opt>
+                <name>none</name>
+                <lbs>0</lbs>
+            </opt>
+            <opt>
+                <name>AIM-9</name>
+                <lbs>188</lbs>
+            </opt>
+            <opt>
+                <name>AIM-120</name>
+                <lbs>335</lbs>
+            </opt>
+            <opt>
+                <name>AGM-114</name>
+                <lbs>670</lbs>
+            </opt>
+        </weight>
+        
+        <weight n="5">
+            <name>Left-Internal-Bay Station06 </name>
+            <tank>10</tank>
+            <weight-lb type="float">0</weight-lb>
+            <selected>none</selected>
+            <launched type="bool">false</launched>
             <opt>
                 <name>none</name>
                 <lbs>0</lbs>
@@ -1511,75 +1549,29 @@
                 <name>AIM-120</name>
                 <lbs>335</lbs>
             </opt>
-            <opt>
-                <name>AIM-9</name>
-                <lbs>188</lbs>
-            </opt>
-            <opt>
-                <name>AIM-120 + MK-82</name>
-                <lbs>688</lbs>
-            </opt>
-            <opt>
-                <name>AIM-120 + GBU-12</name>
-                <lbs>688</lbs>
-            </opt>
-            <opt>
-                <name>AIM-120 + GBU-16</name>
-                <lbs>1188</lbs>
-            </opt>
-        </weight>
-        
-        <weight n="5">
-            <name>Station6</name>
-            <tank>10</tank>
-            <weight-lb type="float">0</weight-lb>
-            <selected>none</selected>
-            <opt>
-                <name>none</name>
-                <lbs>0</lbs>
-            </opt>
-            <opt>
-                <name>370_Gal_Tank</name>
-                <lbs>216</lbs>
-                <gals>379</gals>
-            </opt>
-            <opt>
-                <name>AGM-154</name>
-                <lbs>1095</lbs>
-            </opt>
-            <opt>
-                <name>GBU-10</name>
-                <lbs>2000</lbs>
-            </opt>
-            <opt>
-                <name>GBU-24</name>
-                <lbs>2000</lbs>
-            </opt>
         </weight>
         
         <weight n="6">
-            <name>Station7</name>
+            <name>Right-Internal-Bay Station07</name>
             <weight-lb type="float">0</weight-lb>
             <selected>none</selected>
+            <launched type="bool">false</launched>
             <opt>
                 <name>none</name>
                 <lbs>0</lbs>
             </opt>
             <opt>
-                <name>2xAGM-65</name>
-                <lbs>1000</lbs>
-            </opt>
-            <opt>
-                <name>2xMK-82</name>
-                <lbs>1000</lbs>
+                <name>AIM-120</name>
+                <lbs>335</lbs>
             </opt>
         </weight>
         
         
         <weight n="7">
-            <name>Station8</name>
+            <name>Right-Internal-Bay Station08</name>
             <weight-lb type="float">0</weight-lb>
             <selected>none</selected>
+            <launched type="bool">false</launched>
             <opt>
                 <name>none</name>
                 <lbs>0</lbs>
@@ -1588,12 +1580,21 @@
                 <name>AIM-9</name>
                 <lbs>188</lbs>
             </opt>
+             <opt>
+                <name>AIM-120</name>
+                <lbs>335</lbs>
+            </opt>
+           <opt>
+                <name>AGM-114</name>
+                <lbs>670</lbs>
+            </opt>
         </weight>
         
         <weight n="8">
-            <name>Station9</name>
+            <name>Station09</name>
             <weight-lb type="float">0</weight-lb>
             <selected>none</selected>
+            <launched type="bool">false</launched>
             <opt>
                 <name>none</name>
                 <lbs>0</lbs>
@@ -1608,6 +1609,7 @@
             <name>Station10</name>
             <weight-lb type="float">0</weight-lb>
             <selected>none</selected>
+            <launched type="bool">false</launched>
             <opt>
                 <name>none</name>
                 <lbs>0</lbs>
@@ -1626,6 +1628,7 @@
             <name>Station11</name>
             <weight-lb type="float">0</weight-lb>
             <selected>none</selected>
+            <launched type="bool">false</launched>
             <opt>
                 <name>none</name>
                 <lbs>0</lbs>
@@ -1644,6 +1647,7 @@
             <name>Station12</name>
             <weight-lb type="float">0</weight-lb>
             <selected>none</selected>
+            <launched type="bool">false</launched>
             <opt>
                 <name>none</name>
                 <lbs>0</lbs>
@@ -2184,7 +2188,7 @@
             <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
         </radardist>
         <awg_9>
-            <file>Aircraft/TECH-DEMO-01/Nasal/awg_9.nas</file>
+            <file>Aircraft/F-15/Nasal/awg_9.nas</file>
         </awg_9>
         <!--<dual_control_tools>
             <file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
@@ -2203,7 +2207,7 @@
             <file>Aircraft/TECH-DEMO-01/Nasal/an-arc-159v1.nas</file>
         </an_arc_159v1>-->
         <f15_chronograph>
-            <file>Aircraft/TECH-DEMO-01/Nasal/chronograph.nas</file>
+            <file>Aircraft/F-15/Nasal/chronograph.nas</file>
         </f15_chronograph>
         <FLCS>
              <file>Aircraft/TECH-DEMO-01/Nasal/FLCS.nas</file>         
@@ -2218,40 +2222,43 @@
             <file>Aircraft/TECH-DEMO-01/Nasal/SMS.nas</file>
         </SMS>          
         <aircraft>
+        <!--
             <file>Nasal/canvas/MFD_Generic.nas</file>
             <file>Aircraft/Generic/an_spn_46.nas</file>
             <file>Aircraft/Generic/an_spn_46.nas</file>
-            <!--
-             <file>Aircraft/TECH-DEMO-01/Nasal/liveries.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/aircraft-main.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/flaps_computer.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/cadc.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/engines.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/gear.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/hud.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/engines.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/adverse.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/fuel-system.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/electrics.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/instruments.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/afcs.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/fox2.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/damage.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/HUD/HUD_main.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/VSD/VSD_main.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/TEWS/TEWS_main.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/MPCD/MPCD_main.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/weapons.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/ext_stores.nas</file>
-            <file>Aircraft/TECH-DEMO-01/Nasal/crash-and-stress.nas</file>
-            -->
+
+            <file>Aircraft/F-15/Nasal/liveries.nas</file>
+            <file>Aircraft/F-15/Nasal/flaps_computer.nas</file>
+            <file>Aircraft/F-15/Nasal/cadc.nas</file>
+            <file>Aircraft/F-15/Nasal/engines.nas</file>
+            <file>Aircraft/F-15/Nasal/gear.nas</file>
+            <file>Aircraft/F-15/Nasal/hud.nas</file>
+
+            <file>Aircraft/F-15/Nasal/aircraft-main.nas</file>
+            <file>Aircraft/F-15/Nasal/engines.nas</file>
+
+            <file>Aircraft/F-15/Nasal/adverse.nas</file>
+            <file>Aircraft/F-15/Nasal/fuel-system.nas</file>
+            <file>Aircraft/F-15/Nasal/electrics.nas</file>
+            <file>Aircraft/F-15/Nasal/instruments.nas</file>
+            <file>Aircraft/F-15/Nasal/afcs.nas</file>
+            <file>Aircraft/F-15/Nasal/fox2.nas</file>
+            <file>Aircraft/F-15/Nasal/damage.nas</file>
+            <file>Aircraft/F-15/Nasal/HUD/HUD_main.nas</file>
+            <file>Aircraft/F-15/Nasal/VSD/VSD_main.nas</file>
+            <file>Aircraft/F-15/Nasal/TEWS/TEWS_main.nas</file>
+            <file>Aircraft/F-15/Nasal/MPCD/MPCD_main.nas</file>
+            <file>Aircraft/F-15/Nasal/weapons.nas</file>
+            <file>Aircraft/F-15/Nasal/ext_stores.nas</file>
+            <file>Aircraft/F-15/Nasal/crash-and-stress.nas</file>
+        -->
             <file>Aircraft/TECH-DEMO-01/Nasal/Main.nas</file>         
       </aircraft>
         <environment>
-            <file>Nasal/environment.nas</file>
+            <file>Aircraft/F-15/Nasal/environment.nas</file>
         </environment>
         <blackout>
-            <file>Aircraft/TECH-DEMO-01/Nasal/blackout.nas</file>
+            <file>Aircraft/F-15/Nasal/blackout.nas</file>
         </blackout>
     </nasal>
 

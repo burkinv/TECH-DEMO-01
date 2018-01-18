@@ -54,6 +54,29 @@
 			<object-name>c_gear_01_axis</object-name>
 		</axis>
 	</animation>	
+	<animation>
+		<type>rotate</type>
+		<object-name>c_gear_launch_bar_01</object-name>
+		<property>gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>0.7</ind>
+				<dep>-100</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>-100</dep>
+			</entry>
+		</interpolation>
+		<offset-deg>0</offset-deg>
+		<axis>
+			<object-name>c_gear_launch_bar_01_axis</object-name>
+		</axis>
+	</animation>	
 <!-- Fron Gear/Steering -->
 	<animation>
 		<type>rotate</type>
@@ -70,7 +93,7 @@
 	<animation>
 		<type>translate</type>
 		<object-name>c_gear_04</object-name> 
-		<property>gear/gear/compression-norm</property>
+		<property>gear/gear[0]/compression-norm</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
@@ -87,6 +110,50 @@
         </interpolation>
 		<axis>
 			<object-name>c_gear_03_axis</object-name>
+		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>c_gear_15</object-name> 
+		<property>gear/gear[0]/compression-norm</property>
+        <interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>0.7</ind>
+				<dep>-30</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>-30</dep>
+			</entry>
+        </interpolation>
+		<axis>
+			<object-name>c_gear_15_axis</object-name>
+		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>c_gear_09</object-name> 
+		<property>gear/gear[0]/compression-norm</property>
+        <interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>0.7</ind>
+				<dep>70</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>70</dep>
+			</entry>
+        </interpolation>
+		<axis>
+			<object-name>c_gear_09_axis</object-name>
 		</axis>
 	</animation>
 <!-- Fron Wheel/Spin -->

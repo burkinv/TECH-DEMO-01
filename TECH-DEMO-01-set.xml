@@ -82,11 +82,5 @@
             </metrics>
         </jsbsim>
     </fdm>
-
-    <nasal>
-        <f15_net>
-            <file>Aircraft/TECH-DEMO-01/Nasal/mp-network.nas</file>
-        </f15_net>
-    </nasal>
-    
+   
 </PropertyList>

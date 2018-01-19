@@ -223,6 +223,15 @@ var payloadSet = func(s)
         #setprop("consumables/fuel/tank[6]/selected",false);
         #setprop("consumables/fuel/tank[7]/selected",false);
     } 
+    elsif ( s == "Jettison All Arms" )
+    {
+        print(s);
+
+        for (var i = 0; i < size(Stations); i = i + 1)
+        {
+            setprop(sprintf("payload/weight[%i]/launched", i), 1);
+        }        
+    } 
      
     #update_dialog_checkboxes();
 	#update_wpstring();

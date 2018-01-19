@@ -2,10 +2,10 @@
 
 <PropertyList>
 
-  <path>doublerack.ac</path>
+  <path>Doublerack.ac</path>
 
   <animation>
-    <object-name>doublerack</object-name>
+    <object-name>Doublerack</object-name>
   </animation>
 
 </PropertyList>

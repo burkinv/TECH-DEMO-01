@@ -272,12 +272,12 @@
 		</axis>
 	</animation>
 
-	<!-- Slats -->
+	<!-- Left Slats -->
 	<animation>
 		<type>translate</type>
 		<object-name>l_slat_01</object-name>
 		<property>surface-positions/flap-pos-norm</property>
-		<factor>0.2</factor>
+		<factor>0.25</factor>
 		<axis>
 			<object-name>l_slat_01_translation_axis</object-name>
 		</axis>
@@ -286,17 +286,36 @@
 		<type>rotate</type>
 		<object-name>l_slat_01</object-name>
 		<property>surface-positions/flap-pos-norm</property>
-		<factor>-10</factor>
+		<factor>-15</factor>
 		<axis>
 			<object-name>l_slat_01_axis</object-name>
 		</axis>
 	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>l_slat_02</object-name>
+		<property>surface-positions/flap-pos-norm</property>
+		<factor>0.25</factor>
+		<axis>
+			<object-name>l_slat_02_translation_axis</object-name>
+		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>l_slat_02</object-name>
+		<property>surface-positions/flap-pos-norm</property>
+		<factor>-15</factor>
+		<axis>
+			<object-name>l_slat_02_axis</object-name>
+		</axis>
+	</animation>
 
+	<!-- Right Slats -->
 	<animation>
 		<type>translate</type>
 		<object-name>r_slat_01</object-name>
 		<property>surface-positions/flap-pos-norm</property>
-		<factor>0.2</factor>
+		<factor>0.25</factor>
 		<axis>
 			<object-name>r_slat_01_translation_axis</object-name>
 		</axis>
@@ -305,9 +324,27 @@
 		<type>rotate</type>
 		<object-name>r_slat_01</object-name>
 		<property>surface-positions/flap-pos-norm</property>
-		<factor>10</factor>
+		<factor>15</factor>
 		<axis>
 			<object-name>r_slat_01_axis</object-name>
+		</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>r_slat_02</object-name>
+		<property>surface-positions/flap-pos-norm</property>
+		<factor>0.25</factor>
+		<axis>
+			<object-name>r_slat_02_translation_axis</object-name>
+		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>r_slat_02</object-name>
+		<property>surface-positions/flap-pos-norm</property>
+		<factor>15</factor>
+		<axis>
+			<object-name>r_slat_02_axis</object-name>
 		</axis>
 	</animation>
 

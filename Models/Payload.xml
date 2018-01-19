@@ -241,6 +241,137 @@
 		</condition>
 	</animation> 
 
+	<!-- Station3/4-Doublerack -->
+	<model>
+		<name>Station3-Doublerack</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/Doublerack/Doublerack.xml</path>
+		<offsets>
+			<x-m> 1.25</x-m>
+			<y-m>-3.19</y-m>
+			<z-m>-0.65</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station3-Doublerack</object-name>      
+		<condition>
+				<or>
+					<equals>
+						<property>payload/weight[2]/selected</property>
+						<value>AGM-114</value>
+					</equals>
+					<equals>
+						<property>payload/weight[3]/selected</property>
+						<value>AGM-114</value>
+					</equals>
+				</or>
+		</condition>
+	</animation> 
+
+	<!-- Station3-LAU-130 -->
+	<model>
+		<name>Station3-LAU-130</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/LAU-130/LAU-130.xml</path>
+		<offsets>
+			<x-m> 1.25</x-m>
+			<y-m>-3.43</y-m>
+			<z-m>-0.68</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>-83.1</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station3-LAU-130</object-name>      
+		<condition>
+			<equals>
+				<property>payload/weight[2]/selected</property>
+				<value>AGM-114-II</value>
+			</equals>
+		</condition>
+	</animation> 
+	
+	<!-- Station3-AGM-114-II -->
+	<model>
+		<name>Station3-AGM-114-II</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AGM-114/AGM-114-II.xml</path>
+		<offsets>
+			<x-m>1.45</x-m>
+			<y-m>-3.69</y-m>
+			<z-m>-0.71</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>-83.1</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station3-AGM-114-II</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[2]/selected</property>
+					<value>AGM-114-II</value>
+				</equals>
+				<equals>
+					<property>payload/weight[2]/launched</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
+
+	<!-- Station4-LAU-130 -->
+	<model>
+		<name>Station4-LAU-130</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/LAU-130/LAU-130.xml</path>
+		<offsets>
+			<x-m> 1.25</x-m>
+			<y-m>-2.95</y-m>
+			<z-m>-0.68</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>83.1</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station4-LAU-130</object-name>      
+		<condition>
+			<equals>
+				<property>payload/weight[3]/selected</property>
+				<value>AGM-114</value>
+			</equals>
+		</condition>
+	</animation> 
+	
+	<!-- Station4-AGM-114 -->
+	<model>
+		<name>Station4-AGM-114</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AGM-114/AGM-114.xml</path>
+		<offsets>
+			<x-m>1.25</x-m>
+			<y-m>-2.66</y-m>
+			<z-m>-0.72</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>83.1</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station4-AGM-114</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[3]/selected</property>
+					<value>AGM-114</value>
+				</equals>
+				<equals>
+					<property>payload/weight[3]/launched</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
 
 	<!-- Station5-LAU-130 -->
 	<model>
@@ -447,6 +578,136 @@
 					<value>false</value>
 				</equals>
 			</and>
+		</condition>
+	</animation> 
+
+	<!-- Station9-LAU-130 -->
+	<model>
+		<name>Station9-LAU-130</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/LAU-130/LAU-130.xml</path>
+		<offsets>
+			<x-m> 1.25</x-m>
+			<y-m> 2.95</y-m>
+			<z-m>-0.68</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>-83.1</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station9-LAU-130</object-name>      
+		<condition>
+			<equals>
+				<property>payload/weight[8]/selected</property>
+				<value>AGM-114</value>
+			</equals>
+		</condition>
+	</animation> 
+	<!-- Station9-AGM-114 -->
+	<model>
+		<name>Station9-AGM-114</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AGM-114/AGM-114.xml</path>
+		<offsets>
+			<x-m>1.25</x-m>
+			<y-m>2.66</y-m>
+			<z-m>-0.72</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>-83.1</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station9-AGM-114</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[8]/selected</property>
+					<value>AGM-114</value>
+				</equals>
+				<equals>
+					<property>payload/weight[8]/launched</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
+
+	<!-- Station10-LAU-130 -->
+	<model>
+		<name>Station10-LAU-130</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/LAU-130/LAU-130.xml</path>
+		<offsets>
+			<x-m> 1.25</x-m>
+			<y-m> 3.43</y-m>
+			<z-m>-0.68</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>83.1</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station10-LAU-130</object-name>      
+		<condition>
+			<equals>
+				<property>payload/weight[9]/selected</property>
+				<value>AGM-114-II</value>
+			</equals>
+		</condition>
+	</animation> 
+	<!-- Station10-AGM-114-II -->
+	<model>
+		<name>Station10-AGM-114-II</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/AGM-114/AGM-114-II.xml</path>
+		<offsets>
+			<x-m>1.45</x-m>
+			<y-m>3.70</y-m>
+			<z-m>-0.71</z-m>
+			<pitch-deg>0</pitch-deg>
+			<roll-deg>83.1</roll-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station10-AGM-114-II</object-name>      
+		<condition>
+			<and>
+				<equals>
+					<property>payload/weight[9]/selected</property>
+					<value>AGM-114-II</value>
+				</equals>
+				<equals>
+					<property>payload/weight[9]/launched</property>
+					<value>false</value>
+				</equals>
+			</and>
+		</condition>
+	</animation> 
+
+	<!-- Station10/9-Doublerack -->
+	<model>
+		<name>Station10-Doublerack</name>
+		<path>Aircraft/TECH-DEMO-01/Models/Payload/Doublerack/Doublerack.xml</path>
+		<offsets>
+			<x-m> 1.25</x-m>
+			<y-m> 3.19</y-m>
+			<z-m>-0.65</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>	
+	<animation>
+		<type>select</type>
+		<object-name>Station10-Doublerack</object-name>      
+		<condition>
+				<or>
+					<equals>
+						<property>payload/weight[8]/selected</property>
+						<value>AGM-114</value>
+					</equals>
+					<equals>
+						<property>payload/weight[9]/selected</property>
+						<value>AGM-114</value>
+					</equals>
+				</or>
 		</condition>
 	</animation> 
 

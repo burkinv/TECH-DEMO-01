@@ -508,7 +508,7 @@
                     <value>Offensive Counter Air</value>
                     <value>Air Superiority</value>
                     <value>No Fly Zone</value>
-                    <value>Ferry Flight</value>
+                    <value>Ground Assault</value>
                     <value>Jettison All Arms</value>
                     <binding>
                         <command>dialog-apply</command>

@@ -128319,7 +128319,7 @@ refs 2
 1 0 0
 kids 0
 OBJECT poly
-name "l_wingfold"
+name "l_wingfold_01"
 data 12
 Untitled.435
 crease 1718.873
@@ -128782,7 +128782,7 @@ refs 3
 4 0 0
 29 0 0
 16 0 0
-kids 4
+kids 5
 OBJECT poly
 name "attachpt31"
 data 12
@@ -129622,6 +129622,36 @@ refs 3
 8 0 0
 28 0 0
 10 0 0
+kids 1
+OBJECT poly
+name "l_slat_02_axis"
+data 9
+Plane.035
+crease 40.0
+numvert 2
+2.69149 -0.37122 5.81781
+0.53757 -0.24016 3.65109
+numsurf 1
+SURF 0X12
+mat 0
+refs 2
+1 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "l_slat_02_translation_axis"
+data 9
+Plane.036
+crease 40.0
+numvert 2
+2.93605 -0.13758 4.34812
+-0.12193 -0.13758 4.34812
+numsurf 1
+SURF 0X12
+mat 0
+refs 2
+1 0 0
+0 0 0
 kids 0
 OBJECT poly
 name "r_slat_02"
@@ -130104,6 +130134,21 @@ refs 3
 28 0 0
 8 0 0
 10 0 0
+kids 1
+OBJECT poly
+name "r_slat_02_axis"
+data 9
+Plane.038
+crease 40.0
+numvert 2
+0.62197 -0.2453 -3.73592
+2.77593 -0.37636 -5.9026
+numsurf 1
+SURF 0X12
+mat 0
+refs 2
+1 0 0
+0 0 0
 kids 0
 OBJECT poly
 name "LED_01"
@@ -168258,7 +168303,7 @@ refs 2
 1 0 0
 kids 0
 OBJECT poly
-name "r_wingfold"
+name "r_wingfold_01"
 data 12
 Untitled.780
 crease 1718.873
@@ -168723,77 +168768,6 @@ refs 3
 16 0 0
 kids 2
 OBJECT poly
-name "attachpt31.001"
-data 12
-Untitled.061
-crease 1718.873
-numvert 8
-2.98239 -0.33782 -5.67607
-2.768 -0.3353 -5.67657
-2.75538 -0.34125 -5.65175
-2.99666 -0.34448 -5.65122
-2.7687 -0.29966 -5.6747
-2.75609 -0.29563 -5.64936
-2.9831 -0.30218 -5.6742
-2.99737 -0.29886 -5.64882
-numsurf 9
-SURF 0X10
-mat 4
-refs 3
-0 0 0
-2 0 0
-1 0 0
-SURF 0X10
-mat 4
-refs 3
-2 0 0
-0 0 0
-3 0 0
-SURF 0X10
-mat 4
-refs 3
-1 0 0
-5 0 0
-4 0 0
-SURF 0X10
-mat 4
-refs 3
-5 0 0
-1 0 0
-2 0 0
-SURF 0X10
-mat 4
-refs 3
-4 0 0
-7 0 0
-6 0 0
-SURF 0X10
-mat 4
-refs 3
-7 0 0
-4 0 0
-5 0 0
-SURF 0X10
-mat 4
-refs 3
-6 0 0
-3 0 0
-0 0 0
-SURF 0X10
-mat 4
-refs 3
-3 0 0
-6 0 0
-7 0 0
-SURF 0X0
-mat 4
-refs 4
-0 0 0
-1 0 0
-4 0 0
-6 0 0
-kids 0
-OBJECT poly
 name "r_aileron_01"
 data 12
 Untitled.779
@@ -169085,6 +169059,21 @@ crease 40.0
 numvert 2
 3.58935 -0.08995 -3.52929
 3.44156 -0.34568 -5.76194
+numsurf 1
+SURF 0X12
+mat 0
+refs 2
+1 0 0
+0 0 0
+kids 0
+OBJECT poly
+name "r_slat_02_translation_axis"
+data 9
+Plane.037
+crease 40.0
+numvert 2
+2.93605 -0.13758 -4.34812
+-0.12193 -0.13758 -4.34812
 numsurf 1
 SURF 0X12
 mat 0

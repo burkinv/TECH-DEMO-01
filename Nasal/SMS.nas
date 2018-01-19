@@ -223,6 +223,29 @@ var payloadSet = func(s)
         #setprop("consumables/fuel/tank[6]/selected",false);
         #setprop("consumables/fuel/tank[7]/selected",false);
     } 
+    elsif ( s == "Ground Assault" )
+    {
+        print(s);
+
+        b_set = 5;
+        setprop("payload/weight[0]/selected","AIM-120");
+        setprop("payload/weight[1]/selected","none");
+        setprop("payload/weight[2]/selected","AGM-114-II");
+        setprop("payload/weight[3]/selected","AGM-114");
+        setprop("payload/weight[4]/selected","AGM-114");
+        setprop("payload/weight[5]/selected","AIM-120");
+        #
+        setprop("payload/weight[6]/selected","AIM-120");
+        setprop("payload/weight[7]/selected","AGM-114");
+        setprop("payload/weight[8]/selected","AGM-114");
+        setprop("payload/weight[9]/selected","AGM-114-II");
+        setprop("payload/weight[10]/selected","none");
+        setprop("payload/weight[11]/selected","AIM-120");
+
+        #setprop("consumables/fuel/tank[5]/selected",false);
+        #setprop("consumables/fuel/tank[6]/selected",false);
+        #setprop("consumables/fuel/tank[7]/selected",false);
+    } 
     elsif ( s == "Jettison All Arms" )
     {
         print(s);

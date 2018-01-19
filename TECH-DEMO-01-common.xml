@@ -1468,16 +1468,12 @@
                 <lbs>783</lbs>
             </opt>
             <opt>
-                <name>AGM-154</name>
-                <lbs>1095</lbs>
+                <name>AGM-114-II</name>
+                <lbs>670</lbs>
             </opt>
             <opt>
-                <name>GBU-10</name>
-                <lbs>2000</lbs>
-            </opt>
-            <opt>
-                <name>GBU-24</name>
-                <lbs>2000</lbs>
+                <name>AIM-120</name>
+                <lbs>335</lbs>
             </opt>
         </weight>
         
@@ -1499,16 +1495,8 @@
                 <lbs>188</lbs>
             </opt>
             <opt>
-                <name>AIM-120 + MK-82</name>
-                <lbs>688</lbs>
-            </opt>
-            <opt>
-                <name>AIM-120 + GBU-12</name>
-                <lbs>688</lbs>
-            </opt>
-            <opt>
-                <name>AIM-120 + GBU-16</name>
-                <lbs>1188</lbs>
+                <name>AGM-114</name>
+                <lbs>670</lbs>
             </opt>
         </weight>
         
@@ -1599,7 +1587,11 @@
                 <name>none</name>
                 <lbs>0</lbs>
             </opt>
-            <opt>
+             <opt>
+                <name>AGM-114</name>
+                <lbs>670</lbs>
+            </opt>
+           <opt>
                 <name>AIM-9</name>
                 <lbs>188</lbs>
             </opt>
@@ -1617,6 +1609,10 @@
             <opt>
                 <name>AGM-88E</name>
                 <lbs>783</lbs>
+            </opt>
+            <opt>
+                <name>AGM-114-II</name>
+                <lbs>670</lbs>
             </opt>
             <opt>
                 <name>AIM-9</name>

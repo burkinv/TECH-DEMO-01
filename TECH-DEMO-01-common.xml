@@ -1101,8 +1101,12 @@
                 <float n="9" alias="/engines/engine[1]/augmentation-burner" />
                 <float n="10" alias="/fdm/jsbsim/propulsion/engine[0]/alt/nozzle-pos-norm" />
                 <float n="11" alias="/fdm/jsbsim/propulsion/engine[1]/alt/nozzle-pos-norm" />
+                <!-- 
                 <float n="12" alias="/surface-positions/l-ramp1-position-deg" />
                 <float n="13" alias="/surface-positions/r-ramp1-position-deg" />
+                 -->
+                <float n="12" alias="/surface-positions/l-ramp1-position-norm" />
+                <float n="13" alias="/surface-positions/l-ramp1-position-norm" />
                 <float n="14" alias="/fdm/jsbsim/systems/electrics/ac-essential-bus1" />
                 <float n="15" alias="/fdm/jsbsim/systems/electrics/ac-left-main-bus" />
                 <float n="16" alias="/engines/engine[0]/afterburner"/>
@@ -1800,7 +1804,7 @@
     </engines>
 
     <input>
-        <!--		<keyboard n="0" include="/Input/Keyboard/carrier-bindings.xml"> -->
+        <!-- <keyboard n="0" include="/Input/Keyboard/carrier-bindings.xml"> -->
         <keyboard n="0" >
             <multikey include="Systems/instruments-multikey.xml"/>
 
@@ -1890,7 +1894,7 @@
             </key>
 
 
-                      <!-- map keys for catapult launch -->
+            <!-- map keys for catapult launch -->
             <key n="67">
                 <name>C</name>
                 <desc>Catapult Launch Command.</desc>
@@ -1927,7 +1931,7 @@
                 </binding>
             </key>
 
-  <!-- map keys for launch-bar -->
+            <!-- map keys for launch-bar -->
             <key n="76">
                 <name>L</name>
                 <desc>Launch-bar engage.</desc>
@@ -2183,9 +2187,9 @@
         <radardist>
             <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
         </radardist>
-        <awg_9>
+        <!-- <awg_9>
             <file>Aircraft/F-15/Nasal/awg_9.nas</file>
-        </awg_9>
+        </awg_9> -->
         <!--<dual_control_tools>
             <file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
         </dual_control_tools>
@@ -2202,9 +2206,10 @@
         <an_arc_159v1>
             <file>Aircraft/TECH-DEMO-01/Nasal/an-arc-159v1.nas</file>
         </an_arc_159v1>-->
-        <f15_chronograph>
+        
+        <!-- <f15_chronograph>
             <file>Aircraft/F-15/Nasal/chronograph.nas</file>
-        </f15_chronograph>
+        </f15_chronograph> -->
         <FLCS>
              <file>Aircraft/TECH-DEMO-01/Nasal/FLCS.nas</file>         
         </FLCS>
@@ -2231,7 +2236,6 @@
             <file>Aircraft/F-15/Nasal/hud.nas</file>
 
             <file>Aircraft/F-15/Nasal/aircraft-main.nas</file>
-            <file>Aircraft/F-15/Nasal/engines.nas</file>
 
             <file>Aircraft/F-15/Nasal/adverse.nas</file>
             <file>Aircraft/F-15/Nasal/fuel-system.nas</file>
@@ -2247,6 +2251,7 @@
             <file>Aircraft/F-15/Nasal/weapons.nas</file>
             <file>Aircraft/F-15/Nasal/ext_stores.nas</file>
             <file>Aircraft/F-15/Nasal/crash-and-stress.nas</file>
+            <file>Aircraft/TECH-DEMO-01/Nasal/engines.nas</file>
         -->
             <file>Aircraft/TECH-DEMO-01/Nasal/Main.nas</file>         
       </aircraft>

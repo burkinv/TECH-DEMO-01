@@ -192,15 +192,15 @@
 			<sum>
 				<product>
 					<property>surface-positions/flap-pos-norm</property>
-					<value>25</value>
-				</product>
-				<product>
-					<property>surface-positions/elevator-pos-norm</property>
 					<value>20</value>
 				</product>
 				<product>
+					<property>surface-positions/elevator-pos-norm</property>
+					<value>10</value>
+				</product>
+				<product>
 					<property>surface-positions/left-aileron-pos-norm</property>
-					<value>-10</value>
+					<value>10</value>
 				</product>
 			</sum>
 		</expression>
@@ -215,15 +215,15 @@
 			<sum>
 				<product>
 					<property>surface-positions/flap-pos-norm</property>
-					<value>-25</value>
-				</product>
-				<product>
-					<property>surface-positions/elevator-pos-norm</property>
 					<value>-20</value>
 				</product>
 				<product>
-					<property>surface-positions/right-aileron-pos-norm</property>
+					<property>surface-positions/elevator-pos-norm</property>
 					<value>-10</value>
+				</product>
+				<product>
+					<property>surface-positions/right-aileron-pos-norm</property>
+					<value>10</value>
 				</product>
 			</sum>
 		</expression>
@@ -240,7 +240,7 @@
 			<sum>
 				<product>
 					<property>surface-positions/left-aileron-pos-norm</property>
-					<value>-10</value>
+					<value>-5</value>
 				</product>
 				<product>
 					<property>surface-positions/elevator-pos-norm</property>
@@ -259,7 +259,7 @@
 			<sum>
 				<product>
 					<property>surface-positions/right-aileron-pos-norm</property>
-					<value>-10</value>
+					<value>-5</value>
 				</product>
 				<product>
 					<property>surface-positions/elevator-pos-norm</property>
@@ -276,8 +276,8 @@
 	<animation>
 		<type>translate</type>
 		<object-name>l_slat_01</object-name>
-		<property>surface-positions/flap-pos-norm</property>
-		<factor>0.25</factor>
+		<property>sim/multiplay/generic/float[12]</property>
+		<factor>0.20</factor>
 		<axis>
 			<object-name>l_slat_01_translation_axis</object-name>
 		</axis>
@@ -285,8 +285,8 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>l_slat_01</object-name>
-		<property>surface-positions/flap-pos-norm</property>
-		<factor>-15</factor>
+		<property>sim/multiplay/generic/float[12]</property>
+		<factor>-16</factor>
 		<axis>
 			<object-name>l_slat_01_axis</object-name>
 		</axis>
@@ -294,8 +294,8 @@
 	<animation>
 		<type>translate</type>
 		<object-name>l_slat_02</object-name>
-		<property>surface-positions/flap-pos-norm</property>
-		<factor>0.25</factor>
+		<property>sim/multiplay/generic/float[12]</property>
+		<factor>0.20</factor>
 		<axis>
 			<object-name>l_slat_02_translation_axis</object-name>
 		</axis>
@@ -303,8 +303,8 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>l_slat_02</object-name>
-		<property>surface-positions/flap-pos-norm</property>
-		<factor>-15</factor>
+		<property>sim/multiplay/generic/float[12]</property>
+		<factor>-16</factor>
 		<axis>
 			<object-name>l_slat_02_axis</object-name>
 		</axis>
@@ -314,8 +314,8 @@
 	<animation>
 		<type>translate</type>
 		<object-name>r_slat_01</object-name>
-		<property>surface-positions/flap-pos-norm</property>
-		<factor>0.25</factor>
+		<property>sim/multiplay/generic/float[13]</property>
+		<factor>0.20</factor>
 		<axis>
 			<object-name>r_slat_01_translation_axis</object-name>
 		</axis>
@@ -323,8 +323,8 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>r_slat_01</object-name>
-		<property>surface-positions/flap-pos-norm</property>
-		<factor>15</factor>
+		<property>sim/multiplay/generic/float[13]</property>
+		<factor>16</factor>
 		<axis>
 			<object-name>r_slat_01_axis</object-name>
 		</axis>
@@ -332,8 +332,8 @@
 	<animation>
 		<type>translate</type>
 		<object-name>r_slat_02</object-name>
-		<property>surface-positions/flap-pos-norm</property>
-		<factor>0.25</factor>
+		<property>sim/multiplay/generic/float[13]</property>
+		<factor>0.20</factor>
 		<axis>
 			<object-name>r_slat_02_translation_axis</object-name>
 		</axis>
@@ -341,8 +341,8 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>r_slat_02</object-name>
-		<property>surface-positions/flap-pos-norm</property>
-		<factor>15</factor>
+		<property>sim/multiplay/generic/float[13]</property>
+		<factor>16</factor>
 		<axis>
 			<object-name>r_slat_02_axis</object-name>
 		</axis>

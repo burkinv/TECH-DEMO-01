@@ -22,6 +22,7 @@ var Init = func()
    	#settimer (Process, 1.0);
 
     setlistener("fdm/jsbsim/fcs/steer-pos-deg", noseWheelSteeringHandler, 1);  
+    setlistener("/controls/gear/nose-wheel-steering", noseWheelSteeringSwitchHandler, 1);  
 
     return 1;
 }
@@ -31,8 +32,8 @@ var Process = func()
     return 1;
 }
 
-var noseWheelSteeringHandler = func {
-
+var noseWheelSteeringHandler = func 
+{
     NWS_light = getprop("fdm/jsbsim/systems/NWS/engaged");
     setprop("controls/flight/NWS", getprop("fdm/jsbsim/fcs/steer-pos-deg")/85.0);
     #print("VMS: controls/flight/NWS updated");
@@ -52,4 +53,16 @@ var noseWheelSteeringHandler = func {
     setprop("sim/model/TECH-DEMO-01/instrumentation/gears/nose-wheel-steering-warnlight", NWS_light);
 }
 
-
+var noseWheelSteeringSwitchHandler = func
+{
+    if (getprop("fdm/jsbsim/fcs/steer-maneuver"))
+    {
+        gui.popupTip("Maneuver NWS disabled");
+        setprop("fdm/jsbsim/fcs/steer-maneuver",0)
+    }
+    else
+    {
+        gui.popupTip("Maneuver NWS enabled");
+        setprop("fdm/jsbsim/fcs/steer-maneuver",1)
+    }
+}

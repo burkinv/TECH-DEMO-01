@@ -12,8 +12,8 @@
         </offsets>
         <overlay>
             <params>
-                <augmentation-alight>sim/multiplay/generic/float[16]</augmentation-alight>
                 <augmentation-ignition>sim/multiplay/generic/float[8]</augmentation-ignition>
+                <augmentation-alight>sim/multiplay/generic/float[16]</augmentation-alight>
             </params>
         </overlay>
     </model>

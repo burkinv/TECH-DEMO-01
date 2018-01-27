@@ -11,6 +11,7 @@
 
 var MODULE_NAME = "Vehicle Management System (WMS)";
 var NWS_light = 0;
+var VMS_MAX_GEAR_COMPRESSION = 3.0;
 
 var getModuleName = func()
 {
@@ -23,6 +24,8 @@ var Init = func()
 
     setlistener("fdm/jsbsim/fcs/steer-pos-deg", noseWheelSteeringHandler, 1);  
     setlistener("/controls/gear/nose-wheel-steering", noseWheelSteeringSwitchHandler, 1);  
+    setlistener("gear/gear[1]/position-norm", leftGearPositionHandler, 1);  
+    setlistener("gear/gear[2]/position-norm", rightGearPositionHandler, 1);  
 
     return 1;
 }
@@ -64,5 +67,31 @@ var noseWheelSteeringSwitchHandler = func
     {
         gui.popupTip("Maneuver NWS enabled");
         setprop("fdm/jsbsim/fcs/steer-maneuver",1)
+    }
+}
+
+var leftGearPositionHandler = func(gearPosition)
+{
+    var fGearPositionValue = gearPosition.getValue();
+    if (fGearPositionValue < 1.0)
+    {
+        setprop("/gears/l-gear-comression", (VMS_MAX_GEAR_COMPRESSION - (VMS_MAX_GEAR_COMPRESSION * fGearPositionValue)));
+    }
+    else
+    {
+        setprop("/gears/l-gear-comression", getprop("gear/gear[1]/compression-norm"));
+    }
+}
+
+var rightGearPositionHandler = func(gearPosition)
+{
+    var fGearPositionValue = gearPosition.getValue();
+    if (fGearPositionValue < 1.0)
+    {
+        setprop("/gears/r-gear-comression", (VMS_MAX_GEAR_COMPRESSION - (VMS_MAX_GEAR_COMPRESSION * fGearPositionValue)));
+    }
+    else
+    {
+        setprop("/gears/r-gear-comression", getprop("gear/gear[2]/compression-norm"));
     }
 }

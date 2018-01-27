@@ -402,7 +402,7 @@
 				<dep>0</dep>
 			</entry>
 			<entry>
-				<ind>0.7</ind>
+				<ind>0.2</ind>
 				<dep>90</dep>
 			</entry>
 			<entry>
@@ -424,7 +424,7 @@
 				<dep>0</dep>
 			</entry>
 			<entry>
-				<ind>0.7</ind>
+				<ind>0.2</ind>
 				<dep>-90</dep>
 			</entry>
 			<entry>
@@ -449,14 +449,10 @@
 			</entry>
 			<entry>
 				<ind>0.1</ind>
-				<dep>0</dep>
-			</entry>
-			<entry>
-				<ind>0.7</ind>
 				<dep>40</dep>
 			</entry>
 			<entry>
-				<ind>1.0</ind>
+				<ind>0.2</ind>
 				<dep>80</dep>
 			</entry>
 		</interpolation>
@@ -477,14 +473,10 @@
 			</entry>
 			<entry>
 				<ind>0.1</ind>
-				<dep>0</dep>
-			</entry>
-			<entry>
-				<ind>0.7</ind>
 				<dep>-40</dep>
 			</entry>
 			<entry>
-				<ind>1.0</ind>
+				<ind>0.2</ind>
 				<dep>-80</dep>
 			</entry>
 		</interpolation>
